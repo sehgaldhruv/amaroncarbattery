@@ -1,0 +1,42 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(#011627d7, #011627d7),url("/images/section1BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* background-color:linear-gradient(#011627d7, #011627d7); */
+}
+
+.car_logo{
+    width: 200px;
+    margin: auto;
+}
+
+.car_logo img{
+    width: 100%;
+}
+
+section{
+    padding: 50px 0px;
+}
+
+.foot{
+  background: linear-gradient(#011627d7, #011627d7),url("/images/section1BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#carDetail{
+    row-gap: 51px;
+}
+
+.batteryimg{
+    max-width: 600px;
+}
+
+.batteryimg img{
+    width: 80%;
+}
+
+.foot{
+    color: white;
+}
