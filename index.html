@@ -5,270 +5,231 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <title>Document</title>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Amaron Battery Store",
-        "image": "",
-        "@id": "",
-        "url": "",
-        "telephone": "8178396135",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "12/5 Block 5, East Patel Nagar",
-          "addressLocality": "New Delhi",
-          "postalCode": "110008",
-          "addressCountry": "+91"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "00:00",
-          "closes": "23:59"
-        }
-      }
-      </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Amaron Store</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./images/amaronLogo.webp"
-            alt="Armon"
-            width="150px"
-            height="90px"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">CAR BATTERIES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">INVENTOR BATTERIES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
+    <nav>
+      <div class="logo">
+        <a href="#"
+          ><img
+            src="images/amaronLogo.webp"
+            alt="amaron logo"
+            class="logo-image"
+        /></a>
+      </div>
+      <div class="nav-links">
+        <a href="#cars">Car Batteries</a>
+        <a href="#inverter">Invertor Battries</a>
+        <a href="#contact">Contact Us</a>
       </div>
     </nav>
-    <div class="p-5 text-center bg-image rounded-3 hero">
-      <div class="mask">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3">Amaron Battery Store</h1>
-            <h4 class="mb-3"> 12/5 Block 12, East Patel Nagar New Delhi 110008</h4>
-          </div>
-        </div>
+
+    <main>
+      <div class="section">
+        <h1 class="slogan">Amaron Store</h1>
+        <h3 class="phone-number">+91-8178396135</h3>
+        <a href="#cars" class="link linkCar">
+          <button class="main-button carBatteries">CAR BATTERIES</button>
+        </a>
+        <a href="#inverter" class="link linkCar">
+          <button class="main-button inverterBatteries">
+            INVERTER BATTERIES
+          </button>
+        </a>
       </div>
-    </div>
-    <!-- car batteries -->
-    <section>
-      <div class="container">
-        <h1>car batteries</h1>
-        <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col">
-              <div href="" class="card-link" onclick="car(`Audi`)">
-                <div class="car_logo">
-                  <img src="images/audi-logo.png" alt="" class="card-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card-link">
-                <div class="car_logo">
-                  <img
-                    src="images/bmw_logo_PNG19707.png"
-                    alt=""
-                    class="card-image"
-                    onclick="car(`BMW`)"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div href="#" class="card-link" onclick="car(`Jaquar`)">
-                <div class="car_logo">
-                  <img src="images/jaguar-logo.png" alt="" class="card-image" />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div href="#" class="card-link" onclick="car(`Mercedes`)">
-                <div class="car_logo">
-                  <img
-                    src="images/mercedes-benz-logo-1-1.png"
-                    alt=""
-                    class="card-image"
-                  />
-                </div>
-              </div>
-            </div>
+    </main>
+
+    <section class="cars" id="cars">
+      <h1 class="heading">CAR BATTERIES</h1>
+      <div class="cards">
+        <a href="audi.html" class="card-link">
+          <div class="card">
+            <img src="images/audi-logo.png" alt="" class="card-image" />
           </div>
-          <div class="row justify-content-center align-items-center">
-            <div class="col">
-              <div href="#" class="card-link" onclick="car(`Porsche`)">
-                <div class="car_logo">
-                  <img
-                    src="images/porsche-logo-950x1100.png"
-                    alt=""
-                    class="card-image"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div href="#" class="card-link" onclick="car(`Mahindra`)">
-                <div class="car_logo">
-                  <img
-                    src="images/Mahindra-logo-2560x1440.png"
-                    alt=""
-                    class="card-image"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div href="#" class="card-link" onclick="car(`Maruti`)">
-                <div class="car_logo">
-                  <img
-                    src="images/maruti-suzuki-logo-png-transparent.png"
-                    alt=""
-                    class="card-image"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div href="#" class="card-link" onclick="car(`Tata`)">
-                <div class="car_logo">
-                  <img
-                    src="images/Tata-Group-logo-3840x2160.png"
-                    alt=""
-                    class="card-image"
-                  />
-                </div>
-              </div>
-            </div>
+        </a>
+        <a href="bmw.html" class="card-link">
+          <div class="card">
+            <img src="images/bmw_logo_PNG19707.png" alt="" class="card-image" />
           </div>
+        </a>
+        <a href="jaguar.html" class="card-link">
+          <div class="card">
+            <img src="images/jaguar-logo.png" alt="" class="card-image" />
+          </div>
+        </a>
+        <a href="mercedes.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/mercedes-benz-logo-1-1.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="porche.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/porsche-logo-950x1100.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="toyota.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/toyota-logos-brands-logotypes-0.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="honda.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/honda-logo-1700x1150.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="mahindra.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/Mahindra-logo-2560x1440.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="ms.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/maruti-suzuki-logo-png-transparent.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="tata.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/Tata-Group-logo-3840x2160.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="ford.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/Ford-Motor-Company-Logo.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="hyundai.html" class="card-link">
+          <div class="card">
+            <img src="images/hyundai-logo.png" alt="" class="card-image" />
+          </div>
+        </a>
+        <a href="skoda.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/Skoda-logo-2016-1920x1080.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="volvo.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/Volvo-logo-2014-1920x1080.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+        <a href="nissan.html" class="card-link">
+          <div class="card">
+            <img src="images/Nissan_logo.png" alt="" class="card-image" />
+          </div>
+        </a>
+        <a href="kia.html" class="card-link">
+          <div class="card">
+            <img
+              src="images/Kia-logo-2560x1440.png"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="inverter" id="inverter">
+      <h1 class="heading">INVERTER BATTERIES</h1>
+      <div class="cards">
+        <div class="card">
+          <img src="images/amaron1.jpg" alt="" class="card-image" />
+          <h3 class="card-text">AMARON AR145ST36 (145 AH)</h3>
+        </div>
+        <div class="card">
+          <img src="images/amaron2.jpg" alt="" class="card-image" />
+          <h3 class="card-text">EA150TT42 (150 AH)</h3>
+        </div>
+        <div class="card">
+          <img src="images/amaron3.jpeg" alt="" class="card-image" />
+          <h3 class="card-text">PT200TT42 (200 AH)</h3>
         </div>
       </div>
     </section>
 
-    <!-- invenrtor batteries -->
-    <section>
-      <div class="container">
-        <h1>INVERTER BATTERIES</h1>
-        <div class="row justify-content-center align-items-center">
-          <div class="col">
-            <div class="car_logo">
-              <img src="images/amaron1.jpg" alt="" class="card-image" />
-              <h3 class="card-text">PT200TT42 (200 AH)</h3>
-            </div>
+    <footer id="contact">
+      <div class="left-footer-div">
+        <div class="">
+          <img src="images/amaronLogo.webp" alt="" class="logo-footer" />
+        </div>
+        <div class="phone">
+          <div class="phone-logo"><i class="fas fa-phone-alt fa-2x"></i></div>
+          <p class="phone-text">+91-8178396135</p>
+        </div>
+        <div class="address">
+          <div class="address-logo">
+            <i class="fas fa-search-location fa-2x"></i>
           </div>
-          <div class="col">
-            <div class="car_logo">
-              <img src="images/amaron2.jpg" alt="" class="card-image" />
-              <h3 class="card-text">PT200TT42 (200 AH)</h3>
-            </div>
-          </div>
-          <div class="col">
-            <div class="car_logo">
-              <img src="images/amaron3.jpeg" alt="" class="card-image" />
-              <h3 class="card-text">PT200TT42 (200 AH)</h3>
-            </div>
-          </div>
+          <p class="address-text">
+            17, Connaught Lane, Barakhamba, New Delhi, Delhi 110001
+          </p>
         </div>
       </div>
-    </section>
-    <!-- footer -->
-    <section class="foot">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-6 col-sm-12">
-            <div class="">
-              <img
-                src="images/amaronLogo.webp"
-                alt=""
-                class="logo-footer"
-                width="150px"
-              />
-            </div>
-            <div class="phone">
-              <div class="phone-logo">
-                <i class="fas fa-phone-alt fa-2x"></i>
-              </div>
-              <a href="tel:8178396135"><p class="phone-text">8178396135</p></a>
-            </div>
-            <div class="address">
-              <div class="address-logo">
-                <i class="fas fa-search-location fa-2x"></i>
-              </div>
-              <p class="address-text">
-                12/5 Block 12, East Patel Nagar, Patel
-                Nagar, New Delhi, Delhi 110008
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="right-footer-div">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14004.699256952297!2d77.18302375!3d28.654483899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1723453687754!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                width="350"
-                height="250"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                class="map"
-              ></iframe>
-            </div>
-          </div>
-        </div>
+
+      <div class="right-footer-div">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.8982664306664!2d77.22375029920924!3d28.630814104798883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd31153b80b9%3A0x9ece4da4c859f8e7!2s17%2C%20Connaught%20Lane%2C%20Barakhamba%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1723537167635!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-        function car(car) {
-            // alert('in car')
-            localStorage.clear();
-            localStorage.carname = car;
-            document.location.href = "/car.html";  
-        }
-    </script>
+    </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
