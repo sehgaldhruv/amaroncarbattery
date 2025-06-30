@@ -9,29 +9,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styles.css">
   <title>Amaron Car Battery</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Car Battery Store",
-      "name": "Amaron Car Battery",
-      "image": "",
-      "@id": "",
-      "url": "",
-      "telephone": "",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "New Delhi",
-        "postalCode": " ",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 28.6435301,
-        "longitude": 77.1714011
-      }
+    <!-- Optional inline style if not using styles.css -->
+  <style>
+    .call-button {
+      text-decoration: none;
     }
-    </script>
+
+    .callNow {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .callNow:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
 
@@ -55,6 +56,12 @@
       </a>
       <a href="#inverter" class="link linkCar">
         <button class=" main-button inverterBatteries">INVERTER BATTERIES</button>
+      </a>
+        <!-- ✅ CALL BUTTON added here -->
+      <a href="tel:+917011218595" class="call-button">
+        <button class="main-button callNow">
+          <i class="fas fa-phone-alt"></i> 7011218595
+        </button>
       </a>
     </div>
   </main>
@@ -173,11 +180,11 @@
       </div>
       <div class="phone">
         <div class="phone-logo"><i class="fas fa-phone-alt fa-2x"></i></div>
-        <p class="phone-text"><a href="tel: "></p>
+        <p class="phone-text">+917011218595<a href="tel: +917011218595"></p>
       </div>
       <div class="address">
         <div class="address-logo"><i class="fas fa-search-location fa-2x"></i></div>
-        <p class="address-text"></p>
+        <p class="address-text">New Delhi</p>
       </div>
     </div>
 
